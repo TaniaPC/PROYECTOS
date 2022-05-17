@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <!--informacion al servidor y al navegador-->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--este es el que se va a ver-->
+  <title>MI BLOG</title>
+  <link rel="icon" href="../MI_BLOG/imagenes/tiernositolove.jpg">
+  <link rel="stylesheet" href="style.css">
+  </head>
+  <!--contenedor para el menu interactivo y un logo-->
+<body>
+  <div class="container">
+    <header>
+      <img src="./imagenes/logo.jpg" alt="Logo">
+      <nav>
+        <ul>
+            <li><a href="./index.html">INICIO</a></li> 
+            <li><a href="./project.html">PROYECTOS</a></li>
+            <li><a href="./galeria.html">GALERIA</a></li>
+            <li><a href="./contact.html">CONTACTOS</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!--seccion de descripcion y algunas imagenes-->
+    <section class="mainbody">
+      <main>
+          <h1>Seria bueno saber de ti deja un mensaje:</h1>
+      <div id="after_submit"></div>
+      <!--Formulario de contacto-->
+        <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+        <div class="row">
+          <label class="required" for="name">Nombre:</label><br/>
+          <input id="name" class="input" name="name" type="text" value="" size="30"/><br/>
+          <span id="name_validation" class="error_message"></span>
+      </div>
+      <div class="row">
+          <label class="required" for="email">Email:</label><br/>
+          <input id="email" class="input" name="email" type="text" value="" size="30"/><br/>
+          <span id="email_validation" class="error_message"></span>
+      </div>
+      <div class="row">
+          <label class="required" for="message">Mensaje:</label><br/>
+          <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br/>
+          <span id="message_validation" class="error_message"></span>
+        </div>
+        <!--Boton de envio de mensaje-->
+        <input id="submit_button" type="submit" value="Send email" onclick="parent.location='mailto:tuemail@dominio.com'"/> 
+      </form>
+      </section>
+     </main>
+     <!--Seccion final de la página--> 
+     <footer>
+          <div class="Footer" id="Contact_me">
+                <h2>Estemos en contacto</h2>
+                <h3>Puedes escribirme a: taniapc@live.com.mx</h3>
+                <a class="btn" href="https://github.com/TaniaPC">Contactame</a>
+                <p class="sign">© 2022 Tania Patiño</p>
+               </div>
+          </footer>
+    </body>
+</html>
